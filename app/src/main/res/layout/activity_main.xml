@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/headertime"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/Time"
+            android:contentDescription="header time" />
+
+<!--        empty view to take on middle space-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/Levels"
+            android:contentDescription="header levels" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="550dp"
+                android:src="@drawable/socially_logo"
+                android:contentDescription="Logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp" /> <!-- optional top margin -->
+
+            <TextView
+                android:id="@+id/fromText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:textSize="18sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true" />
+
+            <!-- "SMD" -->
+            <TextView
+                android:id="@+id/smdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMD"
+                android:textSize="34sp"
+                android:textColor="@color/pink"
+                android:textStyle="bold"
+                android:layout_below="@id/fromText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp" />
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

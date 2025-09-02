@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B85C5C">
+
+<!--    Your existing header-->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/headertime"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/Time"
+            android:contentDescription="header time" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/Levels"
+            android:contentDescription="header levels" />
+
+    </LinearLayout>
+
+<!--    <CHANGE> Fixed ScrollView constraints and added proper bottom margin-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:paddingBottom="32dp"
+            android:gravity="center_horizontal">
+
+<!--            Back arrow-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/back_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/arrow_left1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="back"
+                    app:tint="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Socially"
+                    android:textSize="46sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginStart="45dp" />
+            </LinearLayout>
+
+
+<!--            Subtitle-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create An Account and Sign Up"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="24dp" />
+
+<!--            Profile picture placeholder-->
+            <FrameLayout
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/Camera"
+                    android:contentDescription="profile picture"
+                    android:textColorHint="@color/grey"
+                    />
+
+
+
+            </FrameLayout>
+
+<!--            Username field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="tejpatil064"
+                android:textColorHint="#E0FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+<!--                android:background="@drawable/underline_white"-->
+
+
+<!--            Your Name field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/first_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Tejas"
+                android:textColorHint="#E0FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+<!--                android:background="@drawable/underline_white"-->
+
+
+<!--            Your Last name field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Last name"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/last_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Patil"
+                android:textColorHint="#E0FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+<!--                android:background="@drawable/underline_white"-->
+
+
+<!--            Date of Birth field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/date_of_birth_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="02 - 09 - 2003"
+                android:textColorHint="#E0FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:inputType="date"
+                android:layout_marginBottom="16dp" />
+<!--                android:background="@drawable/underline_white"-->
+
+
+<!--            E-mail field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter E-mail"
+                android:textColorHint="#E0FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+<!--                android:background="@drawable/underline_white"-->
+
+
+<!--            Password field-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+<!--                android:background="@drawable/underline_white"-->
+
+
+                <EditText
+                    android:id="@+id/password_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="••••••••"
+                    android:textColorHint="#E0FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/password_visibility"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="toggle password visibility"
+                    app:tint="#FFFFFF" />
+<!--                    android:src="@drawable/ic_visibility"-->
+
+
+            </LinearLayout>
+
+<!--            Create Account Button-->
+            <Button
+                android:id="@+id/create_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="Create an Account"
+                android:textColor="@color/pink"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/lightestpink"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
