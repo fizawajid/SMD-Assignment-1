@@ -21,7 +21,7 @@
             android:id="@+id/headertime"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Time"
+            android:src="@drawable/time"
             android:contentDescription="header time" />
 
         <View
@@ -33,7 +33,7 @@
             android:id="@+id/headerImage"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Levels"
+            android:src="@drawable/levels"
             android:contentDescription="header levels" />
 
     </LinearLayout>
@@ -96,7 +96,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="24dp" />
@@ -246,7 +246,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerInside"
                         android:layout_marginBottom="4dp" />
@@ -270,7 +270,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
                         android:layout_marginBottom="4dp" />
@@ -294,7 +294,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
                         android:layout_marginBottom="4dp" />
@@ -318,7 +318,7 @@
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
                         android:layout_marginBottom="4dp" />
@@ -371,7 +371,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -379,7 +379,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -387,7 +387,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -395,7 +395,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -403,7 +403,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -411,7 +411,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:scaleType="centerCrop" />
 
             </GridLayout>
@@ -437,7 +437,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Home"
+            android:src="@drawable/home"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -446,7 +446,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Search"
+            android:src="@drawable/search"
             android:background="@android:color/transparent"
             android:contentDescription="search" />
 
@@ -455,7 +455,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Create"
+            android:src="@drawable/create"
             android:background="@android:color/transparent"
             android:contentDescription="create" />
 
@@ -464,7 +464,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Reels"
+            android:src="@drawable/reels"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 
@@ -473,7 +473,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Profile"
+            android:src="@drawable/profile"
             android:background="@android:color/transparent"
             android:contentDescription="profile" />
 

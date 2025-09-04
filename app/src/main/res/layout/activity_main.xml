@@ -20,7 +20,7 @@
             android:id="@+id/headertime"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Time"
+            android:src="@drawable/time"
             android:contentDescription="header time" />
 
 <!--        empty view to take on middle space-->
@@ -33,7 +33,7 @@
             android:id="@+id/headerImage"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Levels"
+            android:src="@drawable/levels"
             android:contentDescription="header levels" />
 
     </LinearLayout>

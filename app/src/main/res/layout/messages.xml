@@ -21,7 +21,7 @@
             android:id="@+id/headertime"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Time"
+            android:src="@drawable/time"
             android:contentDescription="header time" />
 
         <View
@@ -33,7 +33,7 @@
             android:id="@+id/headerImage"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Levels"
+            android:src="@drawable/levels"
             android:contentDescription="header levels" />
 
     </LinearLayout>
@@ -88,7 +88,7 @@
             android:id="@+id/add_message"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/Plus"
+            android:src="@drawable/plus"
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="add message"
@@ -148,7 +148,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -193,7 +193,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -216,7 +216,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -261,7 +261,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -284,7 +284,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -329,7 +329,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -352,7 +352,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -397,7 +397,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -420,7 +420,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -465,7 +465,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -488,7 +488,7 @@
                 <ImageView
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:src="@drawable/Like"
+                    android:src="@drawable/like"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -533,7 +533,7 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/Camera"
+                        android:src="@drawable/camera"
                         android:layout_marginTop="4dp"
                         android:contentDescription="camera"
                         app:tint="#999999" />
@@ -559,7 +559,7 @@
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/Camera"
+            android:src="@drawable/camera"
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="camera"
@@ -592,7 +592,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Home"
+            android:src="@drawable/home"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -601,7 +601,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Search"
+            android:src="@drawable/search"
             android:background="@android:color/transparent"
             android:contentDescription="search" />
 
@@ -610,7 +610,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Create"
+            android:src="@drawable/create"
             android:background="@android:color/transparent"
             android:contentDescription="create" />
 
@@ -619,7 +619,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Reels"
+            android:src="@drawable/reels"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 
@@ -628,7 +628,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Profile"
+            android:src="@drawable/profile"
             android:background="@android:color/transparent"
             android:contentDescription="profile" />
 

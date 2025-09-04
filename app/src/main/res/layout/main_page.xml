@@ -19,7 +19,7 @@
             android:id="@+id/headertime"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Time"
+            android:src="@drawable/time"
             android:contentDescription="header time" />
 
         <!-- empty view to take on middle space -->
@@ -32,7 +32,7 @@
             android:id="@+id/headerImage"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Levels"
+            android:src="@drawable/levels"
             android:contentDescription="header levels" />
 
     </LinearLayout>
@@ -53,7 +53,7 @@
             android:id="@+id/camera"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Camera"
+            android:src="@drawable/camera"
             app:tint="@color/pink"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
@@ -75,7 +75,7 @@
             android:id="@+id/reel"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Reels"
+            android:src="@drawable/reels"
             android:background="@android:color/transparent"
             android:contentDescription="header levels"
             android:layout_marginEnd="16dp"
@@ -86,7 +86,7 @@
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:src="@drawable/Share"
+            android:src="@drawable/share"
             app:tint="@color/pink"
             android:background="@android:color/transparent"
             android:contentDescription="header levels" />
@@ -144,7 +144,7 @@
                                 android:layout_height="64dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/circle_background"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -182,7 +182,7 @@
                                 android:layout_height="64dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/circle_background"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -220,7 +220,7 @@
                                 android:layout_height="64dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/circle_background"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -258,7 +258,7 @@
                                 android:layout_height="64dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/circle_background"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -296,7 +296,7 @@
                                 android:layout_height="64dp"
                                 android:layout_gravity="center"
                                 android:background="@drawable/circle_background"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -341,7 +341,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/circle_background"
-                        android:src="@drawable/Time"
+                        android:src="@drawable/time"
                         android:scaleType="centerCrop" />
 
                     <LinearLayout
@@ -368,7 +368,7 @@
                             <ImageView
                                 android:layout_width="16dp"
                                 android:layout_height="16dp"
-                                android:src="@drawable/Time"
+                                android:src="@drawable/time"
                                 android:layout_marginStart="4dp" />
 
                         </LinearLayout>
@@ -385,7 +385,7 @@
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/Time"
+                        android:src="@drawable/time"
                         android:background="@android:color/transparent"
                         android:contentDescription="more options" />
 
@@ -396,7 +396,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/Time" />
+                    android:src="@drawable/time" />
 
                 <!-- Post Actions -->
                 <LinearLayout
@@ -409,14 +409,14 @@
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:background="@android:color/transparent"
                         android:contentDescription="like" />
 
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/Comment"
+                        android:src="@drawable/comment"
                         android:background="@android:color/transparent"
                         android:layout_marginStart="16dp"
                         android:contentDescription="comment" />
@@ -424,7 +424,7 @@
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/Share"
+                        android:src="@drawable/share"
                         android:background="@android:color/transparent"
                         android:layout_marginStart="16dp"
                         android:contentDescription="share" />
@@ -456,7 +456,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@drawable/circle_background"
-                        android:src="@drawable/Like"
+                        android:src="@drawable/like"
                         android:scaleType="centerCrop" />
 
                     <TextView
@@ -541,7 +541,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Home"
+            android:src="@drawable/home"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -550,7 +550,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Search"
+            android:src="@drawable/search"
             android:background="@android:color/transparent"
             android:contentDescription="search" />
 
@@ -559,7 +559,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Create"
+            android:src="@drawable/create"
             android:background="@android:color/transparent"
             android:contentDescription="create" />
 
@@ -568,7 +568,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Reels"
+            android:src="@drawable/reels"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 
@@ -577,7 +577,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/Profile"
+            android:src="@drawable/profile"
             android:background="@android:color/transparent"
             android:contentDescription="profile" />
 
