@@ -2,19 +2,19 @@ package com.example.assignment_1
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
 
-class LoginActivity : AppCompatActivity() {
+class LoginConfigActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.login_config) // make sure login_config.xml exists
 
-        val loginButton = findViewById<Button>(R.id.login_button)
+        val loginbutton = findViewById<Button>(R.id.login_button)
         val signupLink = findViewById<Button>(R.id.sign_up_link)
-        val switchacc=findViewById<Button>(R.id.switch_accounts)
 
-        loginButton.setOnClickListener {
+
+        loginbutton.setOnClickListener {
             val intent = Intent(this, MainpageActivity::class.java)
             startActivity(intent)
         }
@@ -24,9 +24,8 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        switchacc.setOnClickListener {
-            val intent = Intent(this,  LoginConfigActivity::class.java)
-            startActivity(intent)
-        }
+
+
     }
 }
+

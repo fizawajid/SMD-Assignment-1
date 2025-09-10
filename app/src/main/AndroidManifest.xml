@@ -12,7 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
-            android:name=".loginActivity"
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LikesActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LikesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddpostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchareaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainpageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginConfigActivity"
+            android:exported="false" /> <!-- <activity android:name=".LoginActivity" /> -->
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

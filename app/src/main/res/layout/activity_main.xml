@@ -80,6 +80,17 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="4dp" />
 
+            <ImageButton
+                android:id="@+id/myImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homeindic"
+                android:layout_below="@id/smdText"
+                android:layout_marginTop="17dp"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                app:tint="@color/pink" />
+
 
 
 

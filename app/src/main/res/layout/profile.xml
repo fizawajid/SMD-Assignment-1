@@ -220,6 +220,7 @@
 
             <!-- Edit Profile button -->
             <Button
+                android:id="@+id/editbtn"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="Edit Profile"
@@ -460,11 +461,11 @@
             android:contentDescription="create" />
 
         <ImageButton
-            android:id="@+id/reels"
+            android:id="@+id/liked"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/reels"
+            android:src="@drawable/like"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 
