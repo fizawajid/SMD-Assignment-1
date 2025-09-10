@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="name_container" type="id"/>
+    <item name="contact_name" type="id"/>
+    <item name="call_timer" type="id"/>
+    <item name="call_controls" type="id"/>
+    <item name="messages_button" type="id"/>
+    <item name="end_call_button" type="id"/>
+    <item name="speaker_button" type="id"/>
+    <item name="status_bar" type="id"/>
+</resources>
+
