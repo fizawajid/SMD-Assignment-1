@@ -124,7 +124,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/like"
+            android:src="@drawable/download"
             android:contentDescription="main selected photo" />
 
     </androidx.cardview.widget.CardView>
@@ -203,7 +203,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/download"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 1" />
 
@@ -212,7 +212,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/girl1"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 2" />
 
@@ -221,7 +221,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/coffee"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 3" />
 
@@ -230,7 +230,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/book"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 4" />
 
@@ -240,7 +240,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/joshua"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 5" />
 
@@ -249,7 +249,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/jacob"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 6" />
 
@@ -258,7 +258,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/pic1"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 7" />
 
@@ -267,7 +267,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/male"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 8" />
 
@@ -277,7 +277,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/flower"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 9" />
 
@@ -286,7 +286,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/beach"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 10" />
 
@@ -295,7 +295,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/art"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 11" />
 
@@ -304,7 +304,7 @@
                 android:layout_height="80dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="2dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/avatar"
                 android:scaleType="centerCrop"
                 android:contentDescription="photo 12" />
 

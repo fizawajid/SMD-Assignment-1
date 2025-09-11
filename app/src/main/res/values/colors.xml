@@ -2,9 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pink">#995470</color>
+    <color name="pink">#9A5A5B</color>
     <color name="lightpink">#A24E79</color>
     <color name="lightestpink">#B87B7B</color>
     <color name="grey">#8E8D8D</color>
+
+
+<!--    <color name="lightpink"> #B07071</color>-->
+<!--    <color name="pink"> #A3797E</color>-->
+
 
 </resources>

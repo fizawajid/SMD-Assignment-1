@@ -93,10 +93,10 @@
                 android:layout_marginBottom="16dp">
 
                 <!-- Profile picture -->
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="24dp" />
@@ -372,7 +372,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -380,7 +380,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/beach"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -388,7 +388,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/flower"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -396,7 +396,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/girl1"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -404,7 +404,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/male"
                     android:scaleType="centerCrop" />
 
                 <ImageView
@@ -412,7 +412,7 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:layout_margin="1dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/coffee"
                     android:scaleType="centerCrop" />
 
             </GridLayout>

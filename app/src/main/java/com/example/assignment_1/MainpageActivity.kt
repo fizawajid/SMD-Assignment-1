@@ -16,6 +16,7 @@ class MainpageActivity : AppCompatActivity() {
         val addpostbtn=findViewById<ImageButton>(R.id.create)
         val likebtn=findViewById<ImageButton>(R.id.liked)
         val profilebtn=findViewById<ImageButton>(R.id.profile)
+        val msgbtn=findViewById<ImageButton>(R.id.message)
 
         searchbtn.setOnClickListener {
             val intent = Intent(this, SearchareaActivity::class.java)
@@ -35,6 +36,11 @@ class MainpageActivity : AppCompatActivity() {
 
         profilebtn.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        msgbtn.setOnClickListener {
+            val intent = Intent(this, MessagesActivity::class.java)
             startActivity(intent)
         }
 

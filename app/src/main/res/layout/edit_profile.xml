@@ -115,11 +115,11 @@
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="32dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profile_photo"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
                     android:layout_marginBottom="12dp" />

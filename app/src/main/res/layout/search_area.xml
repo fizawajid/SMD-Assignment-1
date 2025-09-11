@@ -191,14 +191,14 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/download"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/coffee"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
@@ -208,7 +208,7 @@
                         android:layout_width="0dp"
                         android:layout_height="224dp"
                         android:layout_weight="1"
-                        android:src="@drawable/like"
+                        android:src="@drawable/joshua"
                         android:scaleType="centerCrop"
                         android:layout_margin="2dp" />
 
@@ -224,7 +224,7 @@
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_weight="1"
-                        android:src="@drawable/like"
+                        android:src="@drawable/book"
                         android:scaleType="centerCrop"
                         android:layout_margin="2dp" />
 
@@ -238,7 +238,7 @@
                             android:layout_width="0dp"
                             android:layout_height="120dp"
                             android:layout_weight="1"
-                            android:src="@drawable/like"
+                            android:src="@drawable/flower"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
@@ -246,7 +246,7 @@
                             android:layout_width="0dp"
                             android:layout_height="120dp"
                             android:layout_weight="1"
-                            android:src="@drawable/like"
+                            android:src="@drawable/boy"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
@@ -270,7 +270,7 @@
                             android:layout_width="0dp"
                             android:layout_height="100dp"
                             android:layout_weight="1"
-                            android:src="@drawable/like"
+                            android:src="@drawable/male"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
@@ -278,7 +278,7 @@
                             android:layout_width="0dp"
                             android:layout_height="100dp"
                             android:layout_weight="1"
-                            android:src="@drawable/like"
+                            android:src="@drawable/jacob"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
@@ -288,7 +288,7 @@
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_weight="1"
-                        android:src="@drawable/like"
+                        android:src="@drawable/avatar"
                         android:scaleType="centerCrop"
                         android:layout_margin="2dp" />
 
@@ -304,7 +304,7 @@
                         android:layout_width="0dp"
                         android:layout_height="140dp"
                         android:layout_weight="1"
-                        android:src="@drawable/like"
+                        android:src="@drawable/pic1"
                         android:scaleType="centerCrop"
                         android:layout_margin="2dp" />
 
@@ -317,14 +317,14 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="68dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/beach"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="68dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/flower"
                             android:scaleType="centerCrop"
                             android:layout_margin="2dp" />
 

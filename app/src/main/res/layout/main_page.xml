@@ -136,16 +136,16 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/story_gradient_border"
                                 android:scaleType="centerCrop" />
 
-                            <ImageView
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyImage"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
+                                android:src="@drawable/jacob"
                                 android:layout_gravity="center"
-                                android:background="@drawable/circle_background"
-                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
+
 
                         </FrameLayout>
 
@@ -174,15 +174,15 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/story_gradient_border"
+
                                 android:scaleType="centerCrop" />
 
-                            <ImageView
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyImage1"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
+                                android:src="@drawable/download"
                                 android:layout_gravity="center"
-                                android:background="@drawable/circle_background"
-                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -212,15 +212,15 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/story_gradient_border"
+
                                 android:scaleType="centerCrop" />
 
-                            <ImageView
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyImage2"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
+                                android:src="@drawable/girl1"
                                 android:layout_gravity="center"
-                                android:background="@drawable/circle_background"
-                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -250,15 +250,15 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/story_gradient_border"
+
                                 android:scaleType="centerCrop" />
 
-                            <ImageView
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyImage3"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
+                                android:src="@drawable/male"
                                 android:layout_gravity="center"
-                                android:background="@drawable/circle_background"
-                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -288,15 +288,15 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/story_gradient_border"
+
                                 android:scaleType="centerCrop" />
 
-                            <ImageView
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/storyImage4"
                                 android:layout_width="64dp"
                                 android:layout_height="64dp"
+                                android:src="@drawable/avatar"
                                 android:layout_gravity="center"
-                                android:background="@drawable/circle_background"
-                                android:src="@drawable/time"
                                 android:scaleType="centerCrop" />
 
                         </FrameLayout>
@@ -341,7 +341,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/circle_background"
-                        android:src="@drawable/time"
+                        android:src="@drawable/joshua"
                         android:scaleType="centerCrop" />
 
                     <LinearLayout
@@ -396,7 +396,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/time" />
+                    android:src="@drawable/joshua" />
 
                 <!-- Post Actions -->
                 <LinearLayout

@@ -128,7 +128,8 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:text="Log in"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lightestpink"
             android:textSize="16sp"
             android:layout_marginBottom="32dp"
             android:elevation="0dp" />
@@ -147,26 +148,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="48dp">
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_marginEnd="37dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? "
-                android:textSize="14sp"
-                android:textColor="#666666" />
+                android:text="Don't have an account?"
+                android:textSize="18sp"
+                android:textColor="@color/lightpink"
+                android:layout_marginBottom="14dp" />
 
             <Button
                 android:id="@+id/sign_up_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign up."
-                android:backgroundTint="@color/white"
-                android:textSize="14sp"
+                android:text=" Sign up."
+                android:background="@null"
+                android:backgroundTint="@android:color/transparent"
                 android:textColor="@color/pink"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:clickable="true"
-                android:focusable="true" />
-
+                android:focusable="true"
+                android:layout_marginBottom="14dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp" />
         </LinearLayout>
 
 <!--        Bottom Socially branding-->
