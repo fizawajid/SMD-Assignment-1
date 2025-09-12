@@ -17,24 +17,24 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/headertime"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/time"
-            android:contentDescription="header time" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headertime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/time"-->
+<!--            android:contentDescription="header time" />-->
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <ImageView
-            android:id="@+id/headerImage"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/levels"
-            android:contentDescription="header levels" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headerImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/levels"-->
+<!--            android:contentDescription="header levels" />-->
 
     </LinearLayout>
 
@@ -224,7 +224,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:text="Edit Profile"
-                android:textColor="#333333"
+                android:textColor="@color/pink"
                 android:textSize="14sp"
                 android:backgroundTint="@color/white"
                 android:layout_marginBottom="24dp" />
@@ -244,20 +244,27 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/like"
-                        android:background="@drawable/circle_background"
-                        android:scaleType="centerInside"
-                        android:layout_marginBottom="4dp" />
+                        android:src="@drawable/add"
+                        android:backgroundTint="@color/pink"
+                        android:tint="@color/pink"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="4dp"
+                        app:civ_circle_background_color="@android:color/transparent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        />
+
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="New"
                         android:textSize="12sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/pink" />
 
                 </LinearLayout>
 
@@ -268,20 +275,22 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/coffee"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp" />
+                        android:layout_marginBottom="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Friends"
                         android:textSize="12sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/pink" />
 
                 </LinearLayout>
 
@@ -292,20 +301,22 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/beach"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp" />
+                        android:layout_marginBottom="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sport"
                         android:textSize="12sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/pink" />
 
                 </LinearLayout>
 
@@ -316,20 +327,22 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/flower"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp" />
+                        android:layout_marginBottom="4dp"
+                        android:clickable="true"
+                        android:focusable="true"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Design"
                         android:textSize="12sp"
-                        android:textColor="#666666" />
+                        android:textColor="@color/pink" />
 
                 </LinearLayout>
 
@@ -349,7 +362,9 @@
                     android:src="@drawable/ic_grid_view"
                     android:background="@android:color/transparent"
                     android:layout_marginEnd="24dp"
-                    android:contentDescription="grid view" />
+                    android:contentDescription="grid view"
+                    app:tint="@color/pink"
+                    />
 
                 <ImageButton
                     android:layout_width="48dp"
@@ -438,7 +453,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/home"
+            android:src="@drawable/home2"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -476,7 +491,9 @@
             android:layout_weight="1"
             android:src="@drawable/profile"
             android:background="@android:color/transparent"
-            android:contentDescription="profile" />
+            android:contentDescription="profile"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@android:color/black"/>
 
     </LinearLayout>
 

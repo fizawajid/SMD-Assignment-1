@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import de.hdodenhof.circleimageview.CircleImageView
 
 class MainpageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +44,24 @@ class MainpageActivity : AppCompatActivity() {
             val intent = Intent(this, MessagesActivity::class.java)
             startActivity(intent)
         }
+
+        val storyimg = findViewById<CircleImageView>(R.id.storyImage)
+
+        storyimg.setOnClickListener {
+            val intent = Intent(this, PutstoryActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val storyimg2 = findViewById<CircleImageView>(R.id.storyImage1)
+
+        storyimg2.setOnClickListener {
+            val intent = Intent(this, SomeonestoryActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
 
 
     }

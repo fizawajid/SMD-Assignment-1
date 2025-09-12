@@ -7,6 +7,13 @@
     android:background="#B47067">
 
     <!-- Profile Picture -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" android:background=&quot;@null&quot;"
+        tools:ignore="MissingConstraints" />
+
     <ImageView
         android:id="@+id/profile_picture"
         android:layout_width="120dp"
@@ -41,12 +48,6 @@
             android:textColor="#FFFFFF"
             android:textStyle="normal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="❤️"
-            android:textSize="24sp"
-            android:layout_marginStart="8dp" />
 
     </LinearLayout>
 
@@ -109,11 +110,14 @@
             android:focusable="true"
             android:layout_marginEnd="40dp">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/phoneend3"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/phone_end"
-                app:tint="#FFFFFF"
+                android:src="@drawable/phoneend"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
                 android:contentDescription="end call" />
 
         </LinearLayout>

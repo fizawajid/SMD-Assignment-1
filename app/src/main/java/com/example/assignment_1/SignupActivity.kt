@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageButton
 
 class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,16 @@ class SignupActivity : AppCompatActivity() {
 
         val createacc = findViewById<Button>(R.id.create_account_button)
         createacc.setOnClickListener {
-            val intent = Intent(this,  LoginConfigActivity::class.java)
+            val intent = Intent(this, LoginConfigActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+        val backbtn = findViewById<ImageButton>(R.id.back_arrow)
+        backbtn.setOnClickListener {
+            val intent = Intent(this,  LoginActivity::class.java)
             startActivity(intent)
         }
 

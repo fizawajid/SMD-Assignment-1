@@ -17,24 +17,24 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/headertime"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/time"
-            android:contentDescription="header time" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headertime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/time"-->
+<!--            android:contentDescription="header time" />-->
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <ImageView
-            android:id="@+id/headerImage"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/levels"
-            android:contentDescription="header levels" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headerImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/levels"-->
+<!--            android:contentDescription="header levels" />-->
 
     </LinearLayout>
 
@@ -53,13 +53,14 @@
             android:id="@+id/back_arrow"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/arrow_left"
+            android:src="@drawable/arrow_right"
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="back"
-            app:tint="#333333" />
+            app:tint="@color/pink"
+            android:background="@null"/>
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_picture"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -80,26 +81,30 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/video_call"
+            android:id="@+id/videocall"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/videocall2"
+            android:src="@drawable/vcall"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="video call"
-            android:layout_marginEnd="16dp"
-            android:background="@null"
-            app:tint="@null" />
+            android:contentDescription="info"
+            android:layout_marginEnd="14dp"/>
+
+
 
         <ImageView
             android:id="@+id/info"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/plus"
+            android:src="@drawable/warning"
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="info"
-            app:tint="#333333" />
+
+             />
 
     </LinearLayout>
 
@@ -216,7 +221,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:gravity="start"
                 android:layout_marginBottom="12dp">
 
@@ -225,13 +230,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="60dp"
                     android:background="@drawable/message_recieved_bg"
-                    android:text="Great! I'll send you the application form and guidelines. The internship starts next month and runs for 3 months."
+                    android:text="Great! I'll send you the application form and guidelines"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:maxWidth="280dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/message_recieved_bg"
+                    android:text="Have a nice day"
                     android:textColor="#333333"
                     android:textSize="16sp"
                     android:padding="12dp"
                     android:maxWidth="280dp" />
 
             </LinearLayout>
+
 
             <!-- Add some bottom spacing -->
             <View

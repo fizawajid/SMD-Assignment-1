@@ -99,10 +99,10 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/girl1"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -130,21 +130,21 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/flower"
                         android:scaleType="centerCrop"
                         android:layout_marginEnd="2dp" />
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/coffee"
                         android:scaleType="centerCrop"
                         android:layout_marginEnd="2dp" />
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/beach"
                         android:scaleType="centerCrop" />
 
                 </LinearLayout>
@@ -160,26 +160,14 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <FrameLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp">
-
-                    <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/boy"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop" />
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/like"
-                        android:background="@drawable/circle_background"
-                        android:scaleType="centerCrop"
-                        android:layout_gravity="bottom|end" />
 
-                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -200,7 +188,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -214,10 +202,10 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/boy"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -248,10 +236,10 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/male"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -284,22 +272,16 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/beach"
                             android:scaleType="centerCrop"
                             android:layout_marginEnd="2dp" />
 
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/flower"
                             android:scaleType="centerCrop"
                             android:layout_marginEnd="2dp" />
-
-                        <ImageView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/like"
-                            android:scaleType="centerCrop" />
 
                     </LinearLayout>
 
@@ -312,22 +294,18 @@
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/coffee"
                             android:scaleType="centerCrop"
                             android:layout_marginEnd="2dp" />
 
                         <ImageView
                             android:layout_width="25dp"
                             android:layout_height="25dp"
-                            android:src="@drawable/like"
+                            android:src="@drawable/joshua"
                             android:scaleType="centerCrop"
                             android:layout_marginEnd="2dp" />
 
-                        <ImageView
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/like"
-                            android:scaleType="centerCrop" />
+
 
                     </LinearLayout>
 
@@ -348,10 +326,10 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/joshua"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop" />
 
@@ -376,7 +354,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/beach"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -394,10 +372,10 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/joshua"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop" />
 
@@ -422,7 +400,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/flower"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -436,10 +414,10 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/girl1"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -462,7 +440,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/flower"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -476,10 +454,10 @@
                 android:gravity="center_vertical"
                 android:layout_marginBottom="12dp">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/male"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -507,21 +485,21 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/girl1"
                         android:scaleType="centerCrop"
                         android:layout_marginEnd="2dp" />
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/pic1"
                         android:scaleType="centerCrop"
                         android:layout_marginEnd="2dp" />
 
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/coffee"
                         android:scaleType="centerCrop" />
 
                 </LinearLayout>
@@ -549,7 +527,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/home"
+            android:src="@drawable/home2"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -576,7 +554,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/like"
+            android:src="@drawable/heartfull"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 

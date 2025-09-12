@@ -104,7 +104,9 @@
             android:src="@drawable/close"
             android:contentDescription="close"
             android:background="@null"
+            android:adjustViewBounds="true"
             app:tint="@android:color/white" />
+
 
     </LinearLayout>
 

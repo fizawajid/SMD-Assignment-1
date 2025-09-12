@@ -15,12 +15,15 @@ class ChatDetailActivity : AppCompatActivity() {
 
         val backbtn = findViewById< ImageButton>(R.id.back_arrow)
 
+
+//        val callbtn = findViewById< ImageButton>(R.id.videocall)
+
         backbtn.setOnClickListener {
             val intent = Intent(this, MessagesActivity::class.java)
             startActivity(intent)
         }
 
-        val callbtn = findViewById<ImageButton>(R.id.video_call)
+        val callbtn = findViewById<ImageButton>(R.id.videocall)
         callbtn.setOnClickListener {
             val intent = Intent(this, CallActivity::class.java)
             startActivity(intent)

@@ -11,35 +11,35 @@
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:gravity="center_vertical"
-        tools:ignore="MissingConstraints">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="8dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        tools:ignore="MissingConstraints">-->
 
-        <ImageView
-            android:id="@+id/headertime"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/time"
-            android:contentDescription="header time" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headertime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/time"-->
+<!--            android:contentDescription="header time" />-->
 
-<!--        empty view to take on middle space-->
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+<!--&lt;!&ndash;        empty view to take on middle space&ndash;&gt;-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <ImageView
-            android:id="@+id/headerImage"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/levels"
-            android:contentDescription="header levels" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headerImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/levels"-->
+<!--            android:contentDescription="header levels" />-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 
     <RelativeLayout

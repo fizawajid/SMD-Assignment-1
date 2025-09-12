@@ -1,10 +1,15 @@
 package com.example.assignment_1
 
+import com.example.assignment_1.R
+
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import de.hdodenhof.circleimageview.CircleImageView
+
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +49,16 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, LikesActivity::class.java)
             startActivity(intent)
         }
+
+
+        val profileImage = findViewById<CircleImageView>(R.id.profile_image)
+
+        profileImage.setOnClickListener {
+            val intent = Intent(this, HighlightActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

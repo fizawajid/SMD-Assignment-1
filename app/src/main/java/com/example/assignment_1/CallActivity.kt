@@ -13,12 +13,12 @@ class CallActivity : AppCompatActivity() {
         setContentView(R.layout.call) // make sure login_config.xml exists
 
 
-//        val backbtn = findViewById< ImageButton>(R.id.back_arrow)
-//
-//        backbtn.setOnClickListener {
-//            val intent = Intent(this, MessagesActivity::class.java)
-//            startActivity(intent)
-//        }
+        val phonebtn = findViewById<ImageButton>(R.id.phoneend3)
+
+        phonebtn.setOnClickListener {
+            val intent = Intent(this, ChatDetailActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

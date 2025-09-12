@@ -89,7 +89,7 @@
                 android:textSize="16sp"
                 android:textColor="#A0665C"
                 android:backgroundTint="@color/white"
-                android:padding="16dp"
+                android:padding="15dp"
                 android:clickable="true"
                 android:focusable="true" />
 
@@ -114,10 +114,10 @@
                 android:padding="16dp"
                 android:gravity="center_vertical">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/girl1"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -147,7 +147,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -173,26 +173,17 @@
                 android:padding="16dp"
                 android:gravity="center_vertical">
 
-                <FrameLayout
-                    android:layout_width="40dp"
-                    android:layout_height="40dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/like"
+                        android:src="@drawable/download"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop" />
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="bottom|end"
-                        android:src="@drawable/like"
-                        android:background="@drawable/circle_background"
-                        android:scaleType="centerCrop" />
 
-                </FrameLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -220,7 +211,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/jacob"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -249,7 +240,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/male"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -289,7 +280,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/coffee"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -305,7 +296,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/pic1"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -358,7 +349,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/like"
+                    android:src="@drawable/flower"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop" />
 
@@ -435,7 +426,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/home"
+            android:src="@drawable/home2"
             android:background="@android:color/transparent"
             android:contentDescription="home" />
 
@@ -462,7 +453,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/like"
+            android:src="@drawable/heartfull"
             android:background="@android:color/transparent"
             android:contentDescription="reels" />
 
