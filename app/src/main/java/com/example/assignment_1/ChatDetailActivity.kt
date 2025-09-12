@@ -19,13 +19,13 @@ class ChatDetailActivity : AppCompatActivity() {
             val intent = Intent(this, MessagesActivity::class.java)
             startActivity(intent)
         }
-//
-//        val msg1 = findViewById<LinearLayout>(R.id.message_item_1)
-//        msg1.setOnClickListener {
-//            val intent = Intent(this, ChatDetailActivity::class.java)
-//            startActivity(intent)
-//        }
-//
+
+        val callbtn = findViewById<ImageButton>(R.id.video_call)
+        callbtn.setOnClickListener {
+            val intent = Intent(this, CallActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

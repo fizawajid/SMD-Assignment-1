@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".CallActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChatDetailActivity"
             android:exported="false" />
         <activity
