@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingTop="30dp"> <!-- Added padding to prevent overlap with system icons -->
 
     <!-- Story Progress Indicator -->
     <LinearLayout
@@ -12,8 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="8dp">
 
         <View
             android:layout_width="0dp"
@@ -46,8 +47,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/story_progress_container">
+        android:padding="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/storyImage3"
@@ -99,42 +99,67 @@
         </LinearLayout>
 
         <ImageButton
+            android:id="@+id/back_arrow"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/close"
-            android:contentDescription="close"
-            android:background="@null"
-            android:adjustViewBounds="true"
-            app:tint="@android:color/white" />
+            android:contentDescription="back"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@null" />
 
 
     </LinearLayout>
 
     <!-- Story Content Image -->
-    <ImageView
-        android:id="@+id/story_image"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/coffee"
-        app:layout_constraintBottom_toTopOf="@id/story_controls"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/story_header" />
+        android:layout_weight="1">
 
-    <!-- Heart Animation Overlay (for likes) -->
-    <ImageView
-        android:id="@+id/heart_animation"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:alpha="0"
-        android:src="@drawable/like"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/story_image"
-        app:layout_constraintEnd_toEndOf="@id/story_image"
-        app:layout_constraintStart_toStartOf="@id/story_image"
-        app:layout_constraintTop_toTopOf="@id/story_image"
-        app:tint="#FF4444" />
+        <ImageView
+            android:id="@+id/story_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coffee" />
+
+        <!-- Heart Animation Overlay (for likes) -->
+        <ImageView
+            android:id="@+id/heart_animation"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:src="@drawable/like"
+            android:visibility="gone"
+            app:tint="#FF4444" />
+
+        <!-- Invisible touch areas for navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/left_touch_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <View
+                android:id="@+id/right_touch_area"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+    </FrameLayout>
 
     <!-- Story Controls Bottom -->
     <LinearLayout
@@ -143,9 +168,7 @@
         android:layout_height="80dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp"
-
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:padding="16dp">
 
         <!-- Activity Button -->
         <LinearLayout
@@ -165,8 +188,7 @@
                 android:src="@drawable/activity"
                 android:contentDescription="activity"
                 android:background="@null"
-                app:tint="@android:color/white" />   <!-- or any visible color -->
-
+                app:tint="@android:color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -311,12 +333,14 @@
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/optionbtn"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/options"
-                android:contentDescription="more"
-                android:background="@null"
-                app:tint="@android:color/white" />
+                android:contentDescription="back"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@null" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -330,29 +354,4 @@
 
     </LinearLayout>
 
-    <!-- Invisible touch areas for navigation -->
-    <View
-        android:id="@+id/left_touch_area"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@id/story_controls"
-        app:layout_constraintEnd_toStartOf="@id/right_touch_area"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/story_header"
-        app:layout_constraintWidth_percent="0.3" />
-
-    <View
-        android:id="@+id/right_touch_area"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintBottom_toTopOf="@id/story_controls"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/left_touch_area"
-        app:layout_constraintTop_toBottomOf="@id/story_header"
-        app:layout_constraintWidth_percent="0.7" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

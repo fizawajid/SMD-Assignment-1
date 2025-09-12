@@ -1,52 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <!-- Added existing header section -->
+    <!-- Header section -->
     <LinearLayout
         android:id="@+id/battery"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-<!--        <ImageView-->
-<!--            android:id="@+id/headertime"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/time"-->
-<!--            android:contentDescription="header time" />-->
-
-<!--        <View-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/headerImage"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/levels"-->
-<!--            android:contentDescription="header levels" />-->
-
+        android:gravity="center_vertical">
     </LinearLayout>
 
-    <!-- Added profile header with username and menu -->
+    <!-- Profile header -->
     <LinearLayout
         android:id="@+id/profile_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toBottomOf="@id/battery">
+        android:gravity="center_vertical">
 
         <TextView
             android:layout_width="0dp"
@@ -54,7 +32,7 @@
             android:layout_weight="1"
             android:text="jacob_w"
             android:textSize="20sp"
-            android:textColor="#333333"
+            android:textColor="@color/pink"
             android:textStyle="bold" />
 
         <ImageButton
@@ -62,22 +40,23 @@
             android:layout_height="16dp"
             android:src="@drawable/arrowd"
             android:layout_marginEnd="16dp"
-            android:contentDescription="dropdown" />
+            android:background="@android:color/transparent"
+            android:contentDescription="dropdown"
+            app:tint="@color/pink"/>
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/menu"
-            android:contentDescription="menu" />
-
+            android:contentDescription="menu"
+            app:tint="@color/pink" />
     </LinearLayout>
 
-    <!-- Added scrollable content area for profile info and posts -->
+    <!-- Scrollable content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/profile_header"
-        app:layout_constraintBottom_toTopOf="@id/footer">
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -85,14 +64,13 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Profile info section -->
+            <!-- Profile info -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="16dp">
 
-                <!-- Profile picture -->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
@@ -101,7 +79,6 @@
                     android:scaleType="centerCrop"
                     android:layout_marginEnd="24dp" />
 
-                <!-- Stats section -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -109,6 +86,7 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical">
 
+                    <!-- Posts -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -130,9 +108,9 @@
                             android:text="Posts"
                             android:textSize="14sp"
                             android:textColor="#666666" />
-
                     </LinearLayout>
 
+                    <!-- Followers -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -154,9 +132,9 @@
                             android:text="Followers"
                             android:textSize="14sp"
                             android:textColor="#666666" />
-
                     </LinearLayout>
 
+                    <!-- Following -->
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -178,14 +156,11 @@
                             android:text="Following"
                             android:textSize="14sp"
                             android:textColor="#666666" />
-
                     </LinearLayout>
-
                 </LinearLayout>
-
             </LinearLayout>
 
-            <!-- User bio section -->
+            <!-- Bio -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,10 +190,9 @@
                     android:text="Everything is designed."
                     android:textSize="14sp"
                     android:textColor="#666666" />
-
             </LinearLayout>
 
-            <!-- Edit Profile button -->
+            <!-- Edit Profile -->
             <Button
                 android:id="@+id/editbtn"
                 android:layout_width="match_parent"
@@ -229,7 +203,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Story highlights section -->
+            <!-- Highlights -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -237,6 +211,32 @@
                 android:gravity="center"
                 android:layout_marginBottom="24dp">
 
+                <!-- New -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/add"
+                        android:backgroundTint="@color/pink"
+                        android:scaleType="centerCrop"
+                        android:layout_marginBottom="4dp"
+                        app:civ_circle_background_color="@android:color/transparent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New"
+                        android:textSize="12sp"
+                        android:textColor="@color/pink" />
+                </LinearLayout>
+
+                <!-- Friends -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -248,42 +248,10 @@
                         android:id="@+id/profile_image"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:src="@drawable/add"
-                        android:backgroundTint="@color/pink"
-                        android:tint="@color/pink"
-                        android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp"
-                        app:civ_circle_background_color="@android:color/transparent"
-                        android:clickable="true"
-                        android:focusable="true"
-                        />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="New"
-                        android:textSize="12sp"
-                        android:textColor="@color/pink" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center">
-
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
                         android:src="@drawable/coffee"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp"
-                        android:clickable="true"
-                        android:focusable="true"/>
+                        android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -291,9 +259,9 @@
                         android:text="Friends"
                         android:textSize="12sp"
                         android:textColor="@color/pink" />
-
                 </LinearLayout>
 
+                <!-- Sport -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -307,9 +275,7 @@
                         android:src="@drawable/beach"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp"
-                        android:clickable="true"
-                        android:focusable="true"/>
+                        android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -317,9 +283,9 @@
                         android:text="Sport"
                         android:textSize="12sp"
                         android:textColor="@color/pink" />
-
                 </LinearLayout>
 
+                <!-- Design -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -333,9 +299,7 @@
                         android:src="@drawable/flower"
                         android:background="@drawable/circle_background"
                         android:scaleType="centerCrop"
-                        android:layout_marginBottom="4dp"
-                        android:clickable="true"
-                        android:focusable="true"/>
+                        android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -343,12 +307,10 @@
                         android:text="Design"
                         android:textSize="12sp"
                         android:textColor="@color/pink" />
-
                 </LinearLayout>
-
             </LinearLayout>
 
-            <!-- View toggle buttons -->
+            <!-- View toggles -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -363,8 +325,7 @@
                     android:background="@android:color/transparent"
                     android:layout_marginEnd="24dp"
                     android:contentDescription="grid view"
-                    app:tint="@color/pink"
-                    />
+                    app:tint="@color/pink" />
 
                 <ImageButton
                     android:layout_width="48dp"
@@ -372,15 +333,13 @@
                     android:src="@drawable/ic_list_view"
                     android:background="@android:color/transparent"
                     android:contentDescription="list view" />
-
             </LinearLayout>
 
-            <!-- Photo grid -->
+            <!-- Photo Grid -->
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:rowCount="2">
+                android:columnCount="3">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -429,24 +388,18 @@
                     android:layout_margin="1dp"
                     android:src="@drawable/coffee"
                     android:scaleType="centerCrop" />
-
             </GridLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
-    <!-- Added existing footer section -->
+    <!-- Footer -->
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:padding="8dp">
 
         <ImageButton
             android:id="@+id/home"
@@ -493,8 +446,6 @@
             android:background="@android:color/transparent"
             android:contentDescription="profile"
             app:civ_border_width="4dp"
-            app:civ_border_color="@android:color/black"/>
-
+            app:civ_border_color="@android:color/black" />
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

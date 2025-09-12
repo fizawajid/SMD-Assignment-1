@@ -9,9 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import de.hdodenhof.circleimageview.CircleImageView
+import android.widget.ImageView
 
 class PutstoryActivity : AppCompatActivity() {
-    @SuppressLint("WrongViewCast")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,9 +21,15 @@ class PutstoryActivity : AppCompatActivity() {
 
         val captureimg = findViewById<ImageButton>(R.id.capture_button)
 
+        val arrbtn = findViewById<ImageView>(R.id.arrowright)
 
         captureimg.setOnClickListener {
             val intent = Intent(this, UploadstoryActivity::class.java)
+            startActivity(intent)
+        }
+
+        arrbtn .setOnClickListener {
+            val intent = Intent(this, MainpageActivity::class.java)
             startActivity(intent)
         }
 

@@ -1,48 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#000000"
     tools:ignore="ExtraText">
 
-    <!-- Story Image -->
-    <ImageView
-        android:id="@+id/storyImage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/coffee"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Gradient overlay for top bar -->
+    <!-- Top spacer to prevent overlap with system icons -->
     <View
-        android:id="@+id/topGradient"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:background="@drawable/top_gradient"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
 
-    <!-- Top bar: profile + username + close -->
+    <!--    Your existing header-->
     <LinearLayout
-        android:id="@+id/topBar"
+        android:id="@+id/header_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:paddingTop="16dp"
         android:orientation="horizontal"
+        android:padding="8dp"
         android:gravity="center_vertical"
-        android:background="@android:color/transparent"
-        android:elevation="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/profileImage"
@@ -62,19 +41,46 @@
             android:layout_marginStart="8dp"
             android:textSize="14sp" />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
 
         <ImageButton
-            android:id="@+id/closeButton"
+            android:id="@+id/closebtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:background="@null"
-            android:src="@drawable/like"
-            app:tint="#FFFFFF" />
+            android:src="@drawable/close"
+            android:contentDescription="back"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@null" />
+
+
     </LinearLayout>
+
+    <!-- Main content container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Story Image -->
+        <ImageView
+            android:id="@+id/storyImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coffee" />
+
+        <!-- Gradient overlay for top bar -->
+        <View
+            android:id="@+id/topGradient"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/top_gradient" />
+
+    </FrameLayout>
 
     <!-- Bottom bar: message input + send -->
     <LinearLayout
@@ -84,8 +90,7 @@
         android:padding="12dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:background="@android:color/transparent">
 
         <EditText
             android:id="@+id/messageInput"
@@ -108,4 +113,4 @@
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

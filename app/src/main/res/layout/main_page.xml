@@ -1,65 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-    <!-- Added existing header sections -->
+    <!-- Header: Battery -->
     <LinearLayout
         android:id="@+id/battery"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:gravity="center_vertical"
-        tools:ignore="MissingConstraints">
+        android:gravity="center_vertical" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/headertime"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/time"-->
-<!--            android:contentDescription="header time" />-->
-
-<!--        &lt;!&ndash; empty view to take on middle space &ndash;&gt;-->
-<!--        <View-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/headerImage"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/levels"-->
-<!--            android:contentDescription="header levels" />-->
-
-    </LinearLayout>
-
+    <!-- Message Bar -->
     <LinearLayout
         android:id="@+id/messagebar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toBottomOf="@id/battery"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints">
+        android:gravity="center_vertical">
 
         <ImageButton
             android:id="@+id/camera"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
             android:src="@drawable/camera"
-            app:tint="@color/pink"
             android:layout_marginStart="16dp"
             android:background="@android:color/transparent"
-            android:contentDescription="header time" />
+            android:contentDescription="camera"
+            app:tint="@color/pink" />
 
-        <!-- empty view to take on middle space -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,8 +44,7 @@
             android:textStyle="bold"
             android:textColor="@color/pink"
             android:textSize="20sp"
-            android:gravity="center"
-            />
+            android:gravity="center" />
 
         <ImageButton
             android:id="@+id/reel"
@@ -77,37 +52,32 @@
             android:layout_height="90dp"
             android:src="@drawable/reels"
             android:background="@android:color/transparent"
-            android:contentDescription="header levels"
+            android:contentDescription="reel"
             android:layout_marginEnd="16dp"
-            app:tint="@color/pink"
-            />
+            app:tint="@color/pink" />
 
         <ImageButton
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
             android:src="@drawable/share"
-            app:tint="@color/pink"
             android:background="@android:color/transparent"
-            android:contentDescription="header levels" />
-
+            android:contentDescription="message"
+            app:tint="@color/pink" />
     </LinearLayout>
 
-    <!-- Added main content area with stories and post -->
+    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/messagebar"
-        app:layout_constraintBottom_toTopOf="@id/footer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Stories Section -->
+            <!-- Stories -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,7 +91,7 @@
                     android:paddingStart="8dp"
                     android:paddingEnd="8dp">
 
-                    <!-- Your Story -->
+                    <!-- Example Story -->
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -133,11 +103,6 @@
                             android:layout_width="70dp"
                             android:layout_height="70dp">
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop" />
-
                             <de.hdodenhof.circleimageview.CircleImageView
                                 android:id="@+id/storyImage"
                                 android:layout_width="64dp"
@@ -148,9 +113,7 @@
                                 android:clickable="true"
                                 android:focusable="true"
                                 app:civ_border_width="2dp"
-                                app:civ_border_color="@android:color/holo_red_light"/>
-
-
+                                app:civ_border_color="@android:color/holo_red_light" />
                         </FrameLayout>
 
                         <TextView
@@ -160,7 +123,6 @@
                             android:textSize="12sp"
                             android:textColor="#333333"
                             android:layout_marginTop="4dp" />
-
                     </LinearLayout>
 
                     <!-- Story 1 - karenme -->
@@ -327,8 +289,9 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
 
+                    <!-- Duplicate other stories here like karenme, zachjohn, etc. -->
+                </LinearLayout>
             </HorizontalScrollView>
 
             <!-- Divider -->
@@ -338,7 +301,7 @@
                 android:background="#EEEEEE"
                 android:layout_marginTop="8dp" />
 
-            <!-- Main Post -->
+            <!-- Example Post -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -356,7 +319,6 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/circle_background"
                         android:src="@drawable/joshua"
                         android:scaleType="centerCrop" />
 
@@ -367,27 +329,13 @@
                         android:orientation="vertical"
                         android:layout_marginStart="12dp">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="joshua_l"
-                                android:textSize="14sp"
-                                android:textStyle="bold"
-                                android:textColor="#333333" />
-
-                            <ImageView
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/time"
-                                android:layout_marginStart="4dp" />
-
-                        </LinearLayout>
+                            android:text="joshua_l"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#333333" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -395,7 +343,6 @@
                             android:text="Tokyo, Japan"
                             android:textSize="12sp"
                             android:textColor="#666666" />
-
                     </LinearLayout>
 
                     <ImageButton
@@ -404,7 +351,6 @@
                         android:src="@drawable/options1"
                         android:background="@android:color/transparent"
                         android:contentDescription="more options" />
-
                 </LinearLayout>
 
                 <!-- Post Image -->
@@ -414,7 +360,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/joshua" />
 
-                <!-- Post Actions -->
+                <!-- Actions -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -433,16 +379,16 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/comment"
-                        android:background="@android:color/transparent"
                         android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
                         android:contentDescription="comment" />
 
                     <ImageButton
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/share"
-                        android:background="@android:color/transparent"
                         android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
                         android:contentDescription="share" />
 
                     <View
@@ -456,59 +402,18 @@
                         android:src="@drawable/save"
                         android:background="@android:color/transparent"
                         android:contentDescription="save" />
-
                 </LinearLayout>
 
-                <!-- Likes Count -->
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <!-- Likes -->
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingStart="12dp"
-                    android:paddingEnd="12dp"
-                    android:gravity="center_vertical">
+                    android:padding="12dp"
+                    android:text="Liked by craig_love and 44,686 others"
+                    android:textSize="14sp"
+                    android:textColor="#333333" />
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:background="@drawable/circle_background"
-                        android:src="@drawable/heartfill"
-                        android:scaleType="centerCrop" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Liked by "
-                        android:textSize="14sp"
-                        android:textColor="#333333"
-                        android:layout_marginStart="8dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="craig_love"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=" and "
-                        android:textSize="14sp"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="44,686 others"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                </LinearLayout>
-
-                <!-- Post Caption -->
+                <!-- Caption -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -519,38 +424,30 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="joshua_l"
-                        android:textSize="14sp"
                         android:textStyle="bold"
+                        android:textSize="14sp"
                         android:textColor="#333333" />
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text=" The game in Japan was amazing and I want to share some photos"
                         android:textSize="14sp"
                         android:textColor="#333333"
                         android:layout_marginStart="4dp" />
-
                 </LinearLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
-    <!-- Added existing footer section -->
+    <!-- Footer -->
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:padding="8dp">
 
         <ImageButton
             android:id="@+id/home"
@@ -586,7 +483,7 @@
             android:layout_weight="1"
             android:src="@drawable/like"
             android:background="@android:color/transparent"
-            android:contentDescription="reels" />
+            android:contentDescription="liked" />
 
         <ImageButton
             android:id="@+id/profile"
@@ -596,7 +493,6 @@
             android:src="@drawable/profile"
             android:background="@android:color/transparent"
             android:contentDescription="profile" />
-
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

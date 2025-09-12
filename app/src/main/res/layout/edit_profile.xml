@@ -1,53 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <!-- Kept existing battery header -->
+    <!-- Battery / Header Section -->
     <LinearLayout
         android:id="@+id/battery"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+        android:gravity="center_vertical">
 
-        <ImageView
-            android:id="@+id/headertime"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/time"
-            android:contentDescription="header time" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headertime"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/time"-->
+<!--            android:contentDescription="header time" />-->
 
-        <!-- empty view to take on middle space -->
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1" />-->
 
-        <ImageView
-            android:id="@+id/headerImage"
-            android:layout_width="wrap_content"
-            android:layout_height="90dp"
-            android:src="@drawable/levels"
-            android:contentDescription="header levels" />
+<!--        <ImageView-->
+<!--            android:id="@+id/headerImage"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:src="@drawable/levels"-->
+<!--            android:contentDescription="header levels" />-->
 
     </LinearLayout>
 
-    <!-- Added edit profile header with Cancel, title, and Done buttons -->
+    <!-- Edit Profile Header -->
     <LinearLayout
         android:id="@+id/edit_profile_header"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingHorizontal="16dp"
-        app:layout_constraintTop_toBottomOf="@id/battery">
+        android:paddingHorizontal="16dp">
 
         <Button
             android:id="@+id/cancel_button"
@@ -55,11 +51,8 @@
             android:layout_height="wrap_content"
             android:text="Cancel"
             android:textSize="16sp"
-
             android:backgroundTint="@color/white"
-            android:textColor="#333333"
-            android:clickable="true"
-            android:focusable="true" />
+            android:textColor="#333333" />
 
         <View
             android:layout_width="0dp"
@@ -87,19 +80,16 @@
             android:textSize="16sp"
             android:textColor="#A0665C"
             android:backgroundTint="@color/white"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:focusable="true" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!-- Added scrollable content area with profile form -->
+    <!-- Scrollable Form Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/edit_profile_header"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,14 +121,12 @@
                     android:text="Change Profile Photo"
                     android:textSize="14sp"
                     android:backgroundTint="@color/white"
-                    android:textColor="#A0665C"
-                    android:clickable="true"
-                    android:focusable="true" />
+                    android:textColor="#A0665C" />
 
             </LinearLayout>
 
             <!-- Form Fields -->
-            <!-- Name Field -->
+            <!-- Name -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -166,7 +154,7 @@
 
             </LinearLayout>
 
-            <!-- Username Field -->
+            <!-- Username -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,7 +182,7 @@
 
             </LinearLayout>
 
-            <!-- Website Field -->
+            <!-- Website -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -223,7 +211,7 @@
 
             </LinearLayout>
 
-            <!-- Bio Field -->
+            <!-- Bio -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -244,7 +232,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Digital goodies designer @pixsellz&#10;Everything is designed."
+                    android:text="Digital goodies designer @pixsellz\nEverything is designed."
                     android:textSize="16sp"
                     android:textColor="#333333"
                     android:background="@android:color/transparent"
@@ -254,7 +242,7 @@
 
             </LinearLayout>
 
-            <!-- Switch to Professional Account -->
+            <!-- Switch Professional Account -->
             <TextView
                 android:id="@+id/switch_professional"
                 android:layout_width="wrap_content"
@@ -262,11 +250,9 @@
                 android:text="Switch to Professional Account"
                 android:textSize="16sp"
                 android:textColor="#A0665C"
-                android:layout_marginBottom="32dp"
-                android:clickable="true"
-                android:focusable="true" />
+                android:layout_marginBottom="32dp" />
 
-            <!-- Private Information Section -->
+            <!-- Private Info Header -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -276,7 +262,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="20dp" />
 
-            <!-- Email Field -->
+            <!-- Email -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -305,7 +291,7 @@
 
             </LinearLayout>
 
-            <!-- Phone Field -->
+            <!-- Phone -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -334,7 +320,7 @@
 
             </LinearLayout>
 
-            <!-- Gender Field -->
+            <!-- Gender -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -357,14 +343,11 @@
                     android:text="Male"
                     android:textSize="16sp"
                     android:textColor="#333333"
-                    android:padding="8dp"
-                    android:clickable="true"
-                    android:focusable="true" />
+                    android:padding="8dp" />
 
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

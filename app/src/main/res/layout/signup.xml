@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B85C5C">
 
-<!--    Your existing header-->
+    <!-- Header layout -->
     <LinearLayout
         android:id="@+id/header_layout"
         android:layout_width="match_parent"
@@ -13,38 +14,38 @@
         android:orientation="horizontal"
         android:padding="8dp"
         android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_alignParentTop="true">
 
-<!--        <ImageView-->
-<!--            android:id="@+id/headertime"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/time"-->
-<!--            android:contentDescription="header time" />-->
+        <!-- If you want header icons, you can uncomment them -->
+        <!--
+        <ImageView
+            android:id="@+id/headertime"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/time"
+            android:contentDescription="header time" />
 
-<!--        <View-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="0dp"-->
-<!--            android:layout_weight="1" />-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/headerImage"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="90dp"-->
-<!--            android:src="@drawable/levels"-->
-<!--            android:contentDescription="header levels" />-->
-
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:src="@drawable/levels"
+            android:contentDescription="header levels" />
+        -->
     </LinearLayout>
 
-<!--    <CHANGE> Fixed ScrollView constraints and added proper bottom margin-->
+    <!-- ScrollView below header -->
     <ScrollView
+        android:id="@+id/form_scroll"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/header_layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:layout_below="@id/header_layout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,7 +55,7 @@
             android:paddingBottom="32dp"
             android:gravity="center_horizontal">
 
-<!--            Back arrow-->
+            <!-- Back arrow row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
                     android:src="@drawable/arrow_left1"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="back"
-                    app:tint="@android:color/black" />
+                    android:tint="@android:color/black" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -81,8 +82,7 @@
                     android:layout_marginStart="43dp" />
             </LinearLayout>
 
-
-<!--            Subtitle-->
+            <!-- Subtitle -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                 android:textColor="#FFFFFF"
                 android:layout_marginBottom="24dp" />
 
-<!--            Profile picture placeholder-->
+            <!-- Profile picture -->
             <FrameLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
@@ -105,13 +105,9 @@
                     android:scaleType="centerCrop"
                     android:backgroundTint="@color/white"
                     app:shapeAppearanceOverlay="@style/CircleImage" />
-
-
-
-
             </FrameLayout>
 
-<!--            Username field-->
+            <!-- Username -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,10 +126,8 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:layout_marginBottom="16dp" />
-<!--                android:background="@drawable/underline_white"-->
 
-
-<!--            Your Name field-->
+            <!-- First name -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -152,10 +146,8 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:layout_marginBottom="16dp" />
-<!--                android:background="@drawable/underline_white"-->
 
-
-<!--            Your Last name field-->
+            <!-- Last name -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,10 +166,8 @@
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:layout_marginBottom="16dp" />
-<!--                android:background="@drawable/underline_white"-->
 
-
-<!--            Date of Birth field-->
+            <!-- Date of Birth -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -197,10 +187,8 @@
                 android:textSize="14sp"
                 android:inputType="date"
                 android:layout_marginBottom="16dp" />
-<!--                android:background="@drawable/underline_white"-->
 
-
-<!--            E-mail field-->
+            <!-- E-mail -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -220,10 +208,8 @@
                 android:textSize="14sp"
                 android:inputType="textEmailAddress"
                 android:layout_marginBottom="16dp" />
-<!--                android:background="@drawable/underline_white"-->
 
-
-<!--            Password field-->
+            <!-- Password -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -238,8 +224,6 @@
                 android:layout_height="40dp"
                 android:orientation="horizontal"
                 android:layout_marginBottom="24dp">
-<!--                android:background="@drawable/underline_white"-->
-
 
                 <EditText
                     android:id="@+id/password_input"
@@ -263,12 +247,9 @@
                     android:focusable="true"
                     android:contentDescription="toggle password visibility"
                     app:tint="#FFFFFF" />
-<!--                    android:src="@drawable/ic_visibility"-->
-
-
             </LinearLayout>
 
-<!--            Create Account Button-->
+            <!-- Create Account Button -->
             <Button
                 android:id="@+id/create_account_button"
                 android:layout_width="match_parent"
@@ -278,10 +259,9 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/lightestpink"/>
+                android:backgroundTint="@color/lightestpink" />
 
         </LinearLayout>
-
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
