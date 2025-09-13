@@ -77,15 +77,19 @@
                         app:tint="#999999" />
 
                     <EditText
+                        android:id="@+id/searchid"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Search"
+                        android:hint="kyan"
                         android:textColor="#333333"
                         android:textColorHint="#999999"
                         android:textSize="14sp"
                         android:background="@null"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1" />
 
                 </LinearLayout>
 

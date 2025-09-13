@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".AnotherprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchprofileActivity"
+            android:exported="false" />
+        <activity
             android:name=".SomeonestoryActivity"
             android:exported="false" />
         <activity
@@ -23,9 +29,7 @@
         <activity
             android:name=".HighlightActivity"
             android:exported="false" />
-        <activity
-            android:name=".highlight"
-            android:exported="false" />
+
         <activity
             android:name=".CallActivity"
             android:exported="false" />
