@@ -28,8 +28,9 @@ class LoginConfigActivity : AppCompatActivity() {
         }
 
         backbtn.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, LoginActivity::class.java)
+//            startActivity(intent)
+            finish()
         }
 
 

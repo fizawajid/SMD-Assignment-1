@@ -14,8 +14,9 @@ class AddpostActivity : AppCompatActivity() {
         val cancelbtn = findViewById<Button>(R.id.cancelButton)
 
         cancelbtn.setOnClickListener {
-            val intent = Intent(this, MainpageActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, MainpageActivity::class.java)
+//            startActivity(intent)
+            finish()
         }
 
 

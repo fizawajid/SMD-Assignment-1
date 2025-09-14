@@ -25,15 +25,15 @@
         android:padding="16dp"
         android:layout_below="@id/status_bar_space">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/setting"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/setting"
-            android:contentDescription="back"
+            android:src="@drawable/setting2"
+            android:contentDescription="settings"
             android:clickable="true"
             android:focusable="true"
-            android:background="@null" />
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
 
         <View
             android:layout_width="0dp"

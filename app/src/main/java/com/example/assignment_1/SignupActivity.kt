@@ -24,8 +24,9 @@ class SignupActivity : AppCompatActivity() {
 
         val backbtn = findViewById<ImageButton>(R.id.back_arrow)
         backbtn.setOnClickListener {
-            val intent = Intent(this,  LoginActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this,  LoginActivity::class.java)
+//            startActivity(intent)
+            finish()
         }
 
     }

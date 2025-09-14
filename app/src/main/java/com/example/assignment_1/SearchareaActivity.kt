@@ -37,6 +37,7 @@ class SearchareaActivity : AppCompatActivity() {
         homebtn.setOnClickListener {
             val intent = Intent(this, MainpageActivity::class.java)
             startActivity(intent)
+//            finish()
         }
 
         profilebtn.setOnClickListener {

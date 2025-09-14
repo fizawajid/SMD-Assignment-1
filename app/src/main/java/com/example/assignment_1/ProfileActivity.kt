@@ -43,6 +43,7 @@ class ProfileActivity : AppCompatActivity() {
         homebtn.setOnClickListener {
             val intent = Intent(this, MainpageActivity::class.java)
             startActivity(intent)
+//            finish()
         }
 
         likebtn.setOnClickListener {

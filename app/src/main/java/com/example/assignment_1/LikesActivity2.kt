@@ -15,8 +15,9 @@ class LikesActivity2 : AppCompatActivity() {
         val homebtn=findViewById<ImageButton>(R.id.home)
 
         folbtn.setOnClickListener {
-            val intent = Intent(this, LikesActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, LikesActivity::class.java)
+//            startActivity(intent)
+            finish()
         }
 
         val searchbtn=findViewById< ImageButton>(R.id.search)

@@ -36,8 +36,9 @@ class LikesActivity : AppCompatActivity() {
 
 
         homebtn.setOnClickListener {
-            val intent = Intent(this, MainpageActivity::class.java)
-            startActivity(intent)
+//            val intent = Intent(this, MainpageActivity::class.java)
+//            startActivity(intent)
+            finish()
         }
 
         val profilebtn=findViewById<ImageButton>(R.id.profile)
